@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RabbitMQ Messages</title>
+</head>
+<body>
+<h1>RabbitMQ 수신 메시지</h1>
+<ul>
+    <th:block th:each="message : ${messages}">
+        <li th:text="${message}">메시지 내용</li>
+    </th:block>
+</ul>
+</body>
+</html>
